@@ -16,7 +16,7 @@ int main(void)
 	printf("%s resultado:\n",strcpy(str,"Con salto \n de linea")); 
 	printf("%s resultado:%s\n",strcpy(str,"Con salto \n de lineaA"), ft_strupcase(str)); 
 	printf("%s resultado:\n",strcpy(str,"\r Caracter no imprimible")); 
-	printf("%s resultado:\n",strcpy(str,"\r Caracter no imprimible"), ft_strupcase(str)); 
+	printf("%s resultado:%s\n",strcpy(str,"\r Caracter no imprimible"), ft_strupcase(str)); 
 	return (0);
 }
 

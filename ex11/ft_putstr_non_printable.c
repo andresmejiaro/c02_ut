@@ -11,5 +11,7 @@ int main(void)
 	printf("\n");
 
 	ft_putstr_non_printable("");
+
+	ft_putstr_non_printable("\r\n\e\a\b\t");
 	return 0;
 }

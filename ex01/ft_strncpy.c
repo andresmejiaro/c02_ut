@@ -1,12 +1,13 @@
 /* strcpy example */
 #include <stdio.h>
 #include <string.h>
+#include <unistd.h>
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n);
 
 int main ()
 {
-	char	str1[40]="Sample";
+	char	str1[40]="Sample but long";
 	char	str2[40]="Bienvenidos a Tijuana";
 	char	str3[40]="Bienvenidos a Tijuana";
 	char	*str4;
@@ -32,5 +33,10 @@ int main ()
 	printf("Comparacion de basura:\n%s \n%s\n",str2+num_char_to_copy+1,str5+num_char_to_copy+1);
   	printf("Diferencia en apuntadores original:%ld\n",str4-str2);
  	printf("Diferencia en apuntadores nueva:%ld\n",str5-str3);
+
+
+	ft_strncpy(str1,"h",7);
+	write(1,str1,40);
+
   return 0;
 }
